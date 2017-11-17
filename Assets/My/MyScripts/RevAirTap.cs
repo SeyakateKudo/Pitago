@@ -12,11 +12,17 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
     public GameObject domino;
     public GameObject plane;
     public GameObject stage;
+    public GameObject slope;
+    public GameObject goal;
 
-   public bool setball;
-   public bool setboard;
-   public bool setplane;
-   public bool setstage;
+
+    public bool setball;
+    public bool setboard;
+    public bool setplane;
+    public bool setstage;
+    public bool setslope;
+    public bool setgoal;
+
 
     public RevAirTap rev;
 
@@ -44,6 +50,16 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
             GameObject cube = GameObject.Instantiate(stage);//Cube Prefab の情報を用いて実体
             cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
         }
+        else if (setslope == true)
+        {
+            GameObject cube = GameObject.Instantiate(slope);//Cube Prefab の情報を用いて実体
+            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
+        }
+        else if (setgoal == true)
+        {
+            GameObject cube = GameObject.Instantiate(goal);//Cube Prefab の情報を用いて実体
+            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
+        }
         else
         {
             print("AirTapされました");
@@ -56,6 +72,8 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
         rev.setboard = false;
         rev.setplane = false;
         rev.setstage = false;
+        rev.setslope = false;
+        rev.setgoal = false;
     }
 
     public void BoardClickButton()
@@ -64,6 +82,8 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
         rev.setboard = true;
         rev.setplane = false;
         rev.setstage = false;
+        rev.setslope = false;
+        rev.setgoal = false;
     }
 
     public void PlaneClickButton()
@@ -72,6 +92,8 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
         rev.setboard = false;
         rev.setplane = true;
         rev.setstage = false;
+        rev.setslope = false;
+        rev.setgoal = false;
     }
 
     public void StageClickButton()
@@ -80,6 +102,38 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
         rev.setboard = false;
         rev.setplane = false;
         rev.setstage = true;
+        rev.setslope = false;
+        rev.setgoal = false;
+    }
+
+    public void SlopeClickButton()
+    {
+        rev.setball = false;
+        rev.setboard = false;
+        rev.setplane = false;
+        rev.setstage = false;
+        rev.setslope = true;
+        rev.setgoal = false;
+    }
+
+    public void GoalClickButton()
+    {
+        rev.setball = false;
+        rev.setboard = false;
+        rev.setplane = false;
+        rev.setstage = false;
+        rev.setslope = false;
+        rev.setgoal = true;
+    }
+
+    public void EmptyClickButton()
+    {
+        rev.setball = false;
+        rev.setboard = false;
+        rev.setplane = false;
+        rev.setstage = false;
+        rev.setslope = false;
+        rev.setgoal = false;
     }
 
     // Start関数は初期化のために一度だけ実行される
@@ -90,6 +144,8 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
         rev.setboard = false;
         rev.setplane = false;
         rev.setstage = false;
+        rev.setslope = false;
+        rev.setgoal = false;
 
 
         //AirTap の通知が gameObject に渡るように設定
