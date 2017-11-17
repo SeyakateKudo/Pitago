@@ -13,10 +13,10 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
     public GameObject plane;
     public GameObject stage;
 
-    bool setball;
-    bool setboard;
-    bool setplane;
-    bool setstage;
+   public bool setball;
+   public bool setboard;
+   public bool setplane;
+   public bool setstage;
 
     public RevAirTap rev;
 
@@ -89,6 +89,7 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
         rev.setball = false;
         rev.setboard = false;
         rev.setplane = false;
+        rev.setstage = false;
 
 
         //AirTap の通知が gameObject に渡るように設定
