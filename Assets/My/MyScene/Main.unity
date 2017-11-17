@@ -300,6 +300,10 @@ MonoBehaviour:
   domino: {fileID: 1579571095446450, guid: db6aa3914b962c14381ee7bb6d651326, type: 2}
   plane: {fileID: 1948212030067642, guid: dc8bd09f93f75684d9de859b9b845634, type: 2}
   stage: {fileID: 1798535006221644, guid: 3c84537d56607904e811c60d23ade1fd, type: 2}
+  setball: 0
+  setboard: 0
+  setplane: 0
+  setstage: 0
   rev: {fileID: 877453196}
 --- !u!114 &208885970
 MonoBehaviour:
@@ -615,7 +619,11 @@ MonoBehaviour:
   ball: {fileID: 1016724718528982, guid: c12a014d71121da449a1970a3d4b69b0, type: 2}
   domino: {fileID: 1579571095446450, guid: db6aa3914b962c14381ee7bb6d651326, type: 2}
   plane: {fileID: 1948212030067642, guid: dc8bd09f93f75684d9de859b9b845634, type: 2}
-  stage: {fileID: 0}
+  stage: {fileID: 1798535006221644, guid: 3c84537d56607904e811c60d23ade1fd, type: 2}
+  setball: 0
+  setboard: 0
+  setplane: 0
+  setstage: 0
   rev: {fileID: 877453196}
 --- !u!1 &571430244
 GameObject:
@@ -772,7 +780,11 @@ MonoBehaviour:
   domino: {fileID: 1579571095446450, guid: db6aa3914b962c14381ee7bb6d651326, type: 2}
   plane: {fileID: 1948212030067642, guid: dc8bd09f93f75684d9de859b9b845634, type: 2}
   stage: {fileID: 1798535006221644, guid: 3c84537d56607904e811c60d23ade1fd, type: 2}
-  rev: {fileID: 1075622408}
+  setball: 0
+  setboard: 0
+  setplane: 0
+  setstage: 0
+  rev: {fileID: 0}
 --- !u!4 &877453197
 Transform:
   m_ObjectHideFlags: 0
@@ -1063,7 +1075,11 @@ MonoBehaviour:
   ball: {fileID: 1016724718528982, guid: c12a014d71121da449a1970a3d4b69b0, type: 2}
   domino: {fileID: 1579571095446450, guid: db6aa3914b962c14381ee7bb6d651326, type: 2}
   plane: {fileID: 1948212030067642, guid: dc8bd09f93f75684d9de859b9b845634, type: 2}
-  stage: {fileID: 0}
+  stage: {fileID: 1798535006221644, guid: 3c84537d56607904e811c60d23ade1fd, type: 2}
+  setball: 0
+  setboard: 0
+  setplane: 0
+  setstage: 0
   rev: {fileID: 877453196}
 --- !u!1 &1119188870
 GameObject:
@@ -1441,6 +1457,10 @@ MonoBehaviour:
   domino: {fileID: 1579571095446450, guid: db6aa3914b962c14381ee7bb6d651326, type: 2}
   plane: {fileID: 1948212030067642, guid: dc8bd09f93f75684d9de859b9b845634, type: 2}
   stage: {fileID: 1798535006221644, guid: 3c84537d56607904e811c60d23ade1fd, type: 2}
+  setball: 0
+  setboard: 0
+  setplane: 0
+  setstage: 0
   rev: {fileID: 877453196}
 --- !u!114 &1898824157
 MonoBehaviour:
