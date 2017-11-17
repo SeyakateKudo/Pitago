@@ -430,7 +430,7 @@ MonoBehaviour:
   plane: {fileID: 1948212030067642, guid: dc8bd09f93f75684d9de859b9b845634, type: 2}
   stage: {fileID: 1798535006221644, guid: 3c84537d56607904e811c60d23ade1fd, type: 2}
   slope: {fileID: 1854259274248878, guid: dc8d578aaf9ba7143b9a0f30d8be3e36, type: 2}
-  goal: {fileID: 1551840221385770, guid: 34c31a53f81c78943afc274d7890db6e, type: 2}
+  goal: {fileID: 1300866408430708, guid: 34c31a53f81c78943afc274d7890db6e, type: 2}
   setball: 0
   setboard: 0
   setplane: 0
@@ -577,7 +577,7 @@ MonoBehaviour:
   plane: {fileID: 1948212030067642, guid: dc8bd09f93f75684d9de859b9b845634, type: 2}
   stage: {fileID: 1798535006221644, guid: 3c84537d56607904e811c60d23ade1fd, type: 2}
   slope: {fileID: 1854259274248878, guid: dc8d578aaf9ba7143b9a0f30d8be3e36, type: 2}
-  goal: {fileID: 1948212030067642, guid: dc8bd09f93f75684d9de859b9b845634, type: 2}
+  goal: {fileID: 1300866408430708, guid: 34c31a53f81c78943afc274d7890db6e, type: 2}
   setball: 0
   setboard: 0
   setplane: 0
@@ -724,7 +724,7 @@ MonoBehaviour:
   plane: {fileID: 1948212030067642, guid: dc8bd09f93f75684d9de859b9b845634, type: 2}
   stage: {fileID: 1798535006221644, guid: 3c84537d56607904e811c60d23ade1fd, type: 2}
   slope: {fileID: 1854259274248878, guid: dc8d578aaf9ba7143b9a0f30d8be3e36, type: 2}
-  goal: {fileID: 1551840221385770, guid: 34c31a53f81c78943afc274d7890db6e, type: 2}
+  goal: {fileID: 1300866408430708, guid: 34c31a53f81c78943afc274d7890db6e, type: 2}
   setball: 0
   setboard: 0
   setplane: 0
@@ -1084,7 +1084,7 @@ MonoBehaviour:
   plane: {fileID: 1948212030067642, guid: dc8bd09f93f75684d9de859b9b845634, type: 2}
   stage: {fileID: 1798535006221644, guid: 3c84537d56607904e811c60d23ade1fd, type: 2}
   slope: {fileID: 1854259274248878, guid: dc8d578aaf9ba7143b9a0f30d8be3e36, type: 2}
-  goal: {fileID: 1551840221385770, guid: 34c31a53f81c78943afc274d7890db6e, type: 2}
+  goal: {fileID: 1300866408430708, guid: 34c31a53f81c78943afc274d7890db6e, type: 2}
   setball: 0
   setboard: 0
   setplane: 0
@@ -1293,7 +1293,7 @@ MonoBehaviour:
   plane: {fileID: 1948212030067642, guid: dc8bd09f93f75684d9de859b9b845634, type: 2}
   stage: {fileID: 1798535006221644, guid: 3c84537d56607904e811c60d23ade1fd, type: 2}
   slope: {fileID: 1854259274248878, guid: dc8d578aaf9ba7143b9a0f30d8be3e36, type: 2}
-  goal: {fileID: 1551840221385770, guid: 34c31a53f81c78943afc274d7890db6e, type: 2}
+  goal: {fileID: 1300866408430708, guid: 34c31a53f81c78943afc274d7890db6e, type: 2}
   setball: 0
   setboard: 0
   setplane: 0
@@ -1745,7 +1745,7 @@ MonoBehaviour:
   plane: {fileID: 1948212030067642, guid: dc8bd09f93f75684d9de859b9b845634, type: 2}
   stage: {fileID: 1798535006221644, guid: 3c84537d56607904e811c60d23ade1fd, type: 2}
   slope: {fileID: 1854259274248878, guid: dc8d578aaf9ba7143b9a0f30d8be3e36, type: 2}
-  goal: {fileID: 1551840221385770, guid: 34c31a53f81c78943afc274d7890db6e, type: 2}
+  goal: {fileID: 1300866408430708, guid: 34c31a53f81c78943afc274d7890db6e, type: 2}
   setball: 0
   setboard: 0
   setplane: 0
@@ -1966,7 +1966,7 @@ MonoBehaviour:
   plane: {fileID: 1948212030067642, guid: dc8bd09f93f75684d9de859b9b845634, type: 2}
   stage: {fileID: 1798535006221644, guid: 3c84537d56607904e811c60d23ade1fd, type: 2}
   slope: {fileID: 1854259274248878, guid: dc8d578aaf9ba7143b9a0f30d8be3e36, type: 2}
-  goal: {fileID: 1551840221385770, guid: 34c31a53f81c78943afc274d7890db6e, type: 2}
+  goal: {fileID: 1300866408430708, guid: 34c31a53f81c78943afc274d7890db6e, type: 2}
   setball: 0
   setboard: 0
   setplane: 0
@@ -2091,7 +2091,7 @@ MonoBehaviour:
   plane: {fileID: 1948212030067642, guid: dc8bd09f93f75684d9de859b9b845634, type: 2}
   stage: {fileID: 1798535006221644, guid: 3c84537d56607904e811c60d23ade1fd, type: 2}
   slope: {fileID: 1854259274248878, guid: dc8d578aaf9ba7143b9a0f30d8be3e36, type: 2}
-  goal: {fileID: 1551840221385770, guid: 34c31a53f81c78943afc274d7890db6e, type: 2}
+  goal: {fileID: 1300866408430708, guid: 34c31a53f81c78943afc274d7890db6e, type: 2}
   setball: 0
   setboard: 0
   setplane: 0
