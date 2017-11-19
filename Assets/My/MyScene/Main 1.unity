@@ -427,10 +427,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 1016724718528982, guid: c12a014d71121da449a1970a3d4b69b0, type: 2}
   domino: {fileID: 1579571095446450, guid: db6aa3914b962c14381ee7bb6d651326, type: 2}
-  plane: {fileID: 1948212030067642, guid: dc8bd09f93f75684d9de859b9b845634, type: 2}
-  stage: {fileID: 1798535006221644, guid: 3c84537d56607904e811c60d23ade1fd, type: 2}
-  slope: {fileID: 1854259274248878, guid: dc8d578aaf9ba7143b9a0f30d8be3e36, type: 2}
-  goal: {fileID: 1300866408430708, guid: 34c31a53f81c78943afc274d7890db6e, type: 2}
+  plane: {fileID: 1122707444045390, guid: 790e249a4c9274c46af7a6af70ca66e3, type: 2}
+  stage: {fileID: 1219935309607334, guid: 5840d25243a1d2449a135a3f7e01bef7, type: 2}
+  slope: {fileID: 1843315539557904, guid: e4a80d598cce2514785d5e58f53d8f56, type: 2}
+  goal: {fileID: 1131590712691838, guid: cc57f16e42745d74e966407a23aa1d22, type: 2}
   setball: 0
   setboard: 0
   setplane: 0
@@ -574,10 +574,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 1016724718528982, guid: c12a014d71121da449a1970a3d4b69b0, type: 2}
   domino: {fileID: 1579571095446450, guid: db6aa3914b962c14381ee7bb6d651326, type: 2}
-  plane: {fileID: 1948212030067642, guid: dc8bd09f93f75684d9de859b9b845634, type: 2}
-  stage: {fileID: 1798535006221644, guid: 3c84537d56607904e811c60d23ade1fd, type: 2}
-  slope: {fileID: 1854259274248878, guid: dc8d578aaf9ba7143b9a0f30d8be3e36, type: 2}
-  goal: {fileID: 1300866408430708, guid: 34c31a53f81c78943afc274d7890db6e, type: 2}
+  plane: {fileID: 1122707444045390, guid: 790e249a4c9274c46af7a6af70ca66e3, type: 2}
+  stage: {fileID: 1219935309607334, guid: 5840d25243a1d2449a135a3f7e01bef7, type: 2}
+  slope: {fileID: 1843315539557904, guid: e4a80d598cce2514785d5e58f53d8f56, type: 2}
+  goal: {fileID: 1131590712691838, guid: cc57f16e42745d74e966407a23aa1d22, type: 2}
   setball: 0
   setboard: 0
   setplane: 0
@@ -670,6 +670,48 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 323468046}
+--- !u!1001 &377539460
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4917533958463178, guid: 39a05b97fca7eae4ab4e6fc20287bfaf, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4917533958463178, guid: 39a05b97fca7eae4ab4e6fc20287bfaf, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4917533958463178, guid: 39a05b97fca7eae4ab4e6fc20287bfaf, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4917533958463178, guid: 39a05b97fca7eae4ab4e6fc20287bfaf, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4917533958463178, guid: 39a05b97fca7eae4ab4e6fc20287bfaf, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4917533958463178, guid: 39a05b97fca7eae4ab4e6fc20287bfaf, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4917533958463178, guid: 39a05b97fca7eae4ab4e6fc20287bfaf, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4917533958463178, guid: 39a05b97fca7eae4ab4e6fc20287bfaf, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 39a05b97fca7eae4ab4e6fc20287bfaf, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &491640842
 GameObject:
   m_ObjectHideFlags: 0
@@ -721,10 +763,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 1016724718528982, guid: c12a014d71121da449a1970a3d4b69b0, type: 2}
   domino: {fileID: 1579571095446450, guid: db6aa3914b962c14381ee7bb6d651326, type: 2}
-  plane: {fileID: 1948212030067642, guid: dc8bd09f93f75684d9de859b9b845634, type: 2}
-  stage: {fileID: 1798535006221644, guid: 3c84537d56607904e811c60d23ade1fd, type: 2}
-  slope: {fileID: 1854259274248878, guid: dc8d578aaf9ba7143b9a0f30d8be3e36, type: 2}
-  goal: {fileID: 1300866408430708, guid: 34c31a53f81c78943afc274d7890db6e, type: 2}
+  plane: {fileID: 1122707444045390, guid: 790e249a4c9274c46af7a6af70ca66e3, type: 2}
+  stage: {fileID: 1219935309607334, guid: 5840d25243a1d2449a135a3f7e01bef7, type: 2}
+  slope: {fileID: 1843315539557904, guid: e4a80d598cce2514785d5e58f53d8f56, type: 2}
+  goal: {fileID: 1131590712691838, guid: cc57f16e42745d74e966407a23aa1d22, type: 2}
   setball: 0
   setboard: 0
   setplane: 0
@@ -1081,10 +1123,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 1016724718528982, guid: c12a014d71121da449a1970a3d4b69b0, type: 2}
   domino: {fileID: 1579571095446450, guid: db6aa3914b962c14381ee7bb6d651326, type: 2}
-  plane: {fileID: 1948212030067642, guid: dc8bd09f93f75684d9de859b9b845634, type: 2}
-  stage: {fileID: 1798535006221644, guid: 3c84537d56607904e811c60d23ade1fd, type: 2}
-  slope: {fileID: 1854259274248878, guid: dc8d578aaf9ba7143b9a0f30d8be3e36, type: 2}
-  goal: {fileID: 1300866408430708, guid: 34c31a53f81c78943afc274d7890db6e, type: 2}
+  plane: {fileID: 1122707444045390, guid: 790e249a4c9274c46af7a6af70ca66e3, type: 2}
+  stage: {fileID: 1219935309607334, guid: 5840d25243a1d2449a135a3f7e01bef7, type: 2}
+  slope: {fileID: 1843315539557904, guid: e4a80d598cce2514785d5e58f53d8f56, type: 2}
+  goal: {fileID: 1131590712691838, guid: cc57f16e42745d74e966407a23aa1d22, type: 2}
   setball: 0
   setboard: 0
   setplane: 0
@@ -1290,10 +1332,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 1016724718528982, guid: c12a014d71121da449a1970a3d4b69b0, type: 2}
   domino: {fileID: 1579571095446450, guid: db6aa3914b962c14381ee7bb6d651326, type: 2}
-  plane: {fileID: 1948212030067642, guid: dc8bd09f93f75684d9de859b9b845634, type: 2}
-  stage: {fileID: 1798535006221644, guid: 3c84537d56607904e811c60d23ade1fd, type: 2}
-  slope: {fileID: 1854259274248878, guid: dc8d578aaf9ba7143b9a0f30d8be3e36, type: 2}
-  goal: {fileID: 1300866408430708, guid: 34c31a53f81c78943afc274d7890db6e, type: 2}
+  plane: {fileID: 1122707444045390, guid: 790e249a4c9274c46af7a6af70ca66e3, type: 2}
+  stage: {fileID: 1219935309607334, guid: 5840d25243a1d2449a135a3f7e01bef7, type: 2}
+  slope: {fileID: 1843315539557904, guid: e4a80d598cce2514785d5e58f53d8f56, type: 2}
+  goal: {fileID: 1131590712691838, guid: cc57f16e42745d74e966407a23aa1d22, type: 2}
   setball: 0
   setboard: 0
   setplane: 0
@@ -1742,10 +1784,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 1016724718528982, guid: c12a014d71121da449a1970a3d4b69b0, type: 2}
   domino: {fileID: 1579571095446450, guid: db6aa3914b962c14381ee7bb6d651326, type: 2}
-  plane: {fileID: 1948212030067642, guid: dc8bd09f93f75684d9de859b9b845634, type: 2}
-  stage: {fileID: 1798535006221644, guid: 3c84537d56607904e811c60d23ade1fd, type: 2}
-  slope: {fileID: 1854259274248878, guid: dc8d578aaf9ba7143b9a0f30d8be3e36, type: 2}
-  goal: {fileID: 1300866408430708, guid: 34c31a53f81c78943afc274d7890db6e, type: 2}
+  plane: {fileID: 1122707444045390, guid: 790e249a4c9274c46af7a6af70ca66e3, type: 2}
+  stage: {fileID: 1219935309607334, guid: 5840d25243a1d2449a135a3f7e01bef7, type: 2}
+  slope: {fileID: 1843315539557904, guid: e4a80d598cce2514785d5e58f53d8f56, type: 2}
+  goal: {fileID: 1131590712691838, guid: cc57f16e42745d74e966407a23aa1d22, type: 2}
   setball: 0
   setboard: 0
   setplane: 0
@@ -1963,10 +2005,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 1016724718528982, guid: c12a014d71121da449a1970a3d4b69b0, type: 2}
   domino: {fileID: 1579571095446450, guid: db6aa3914b962c14381ee7bb6d651326, type: 2}
-  plane: {fileID: 1948212030067642, guid: dc8bd09f93f75684d9de859b9b845634, type: 2}
-  stage: {fileID: 1798535006221644, guid: 3c84537d56607904e811c60d23ade1fd, type: 2}
-  slope: {fileID: 1854259274248878, guid: dc8d578aaf9ba7143b9a0f30d8be3e36, type: 2}
-  goal: {fileID: 1300866408430708, guid: 34c31a53f81c78943afc274d7890db6e, type: 2}
+  plane: {fileID: 1122707444045390, guid: 790e249a4c9274c46af7a6af70ca66e3, type: 2}
+  stage: {fileID: 1219935309607334, guid: 5840d25243a1d2449a135a3f7e01bef7, type: 2}
+  slope: {fileID: 1843315539557904, guid: e4a80d598cce2514785d5e58f53d8f56, type: 2}
+  goal: {fileID: 1131590712691838, guid: cc57f16e42745d74e966407a23aa1d22, type: 2}
   setball: 0
   setboard: 0
   setplane: 0
@@ -2089,10 +2131,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 1016724718528982, guid: c12a014d71121da449a1970a3d4b69b0, type: 2}
   domino: {fileID: 1579571095446450, guid: db6aa3914b962c14381ee7bb6d651326, type: 2}
-  plane: {fileID: 1948212030067642, guid: dc8bd09f93f75684d9de859b9b845634, type: 2}
-  stage: {fileID: 1798535006221644, guid: 3c84537d56607904e811c60d23ade1fd, type: 2}
-  slope: {fileID: 1854259274248878, guid: dc8d578aaf9ba7143b9a0f30d8be3e36, type: 2}
-  goal: {fileID: 1300866408430708, guid: 34c31a53f81c78943afc274d7890db6e, type: 2}
+  plane: {fileID: 1122707444045390, guid: 790e249a4c9274c46af7a6af70ca66e3, type: 2}
+  stage: {fileID: 1219935309607334, guid: 5840d25243a1d2449a135a3f7e01bef7, type: 2}
+  slope: {fileID: 1843315539557904, guid: e4a80d598cce2514785d5e58f53d8f56, type: 2}
+  goal: {fileID: 1131590712691838, guid: cc57f16e42745d74e966407a23aa1d22, type: 2}
   setball: 0
   setboard: 0
   setplane: 0
