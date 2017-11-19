@@ -282,9 +282,45 @@ Prefab:
       propertyPath: m_Name
       value: Goal
       objectReference: {fileID: 0}
+    - target: {fileID: 1773396421830248, guid: cc57f16e42745d74e966407a23aa1d22, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc57f16e42745d74e966407a23aa1d22, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &653574055 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1773396421830248, guid: cc57f16e42745d74e966407a23aa1d22,
+    type: 2}
+  m_PrefabInternal: {fileID: 256573748}
+--- !u!114 &653574058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 653574055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d73e000f8f39c8458a1b5c910a6cadd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball: {fileID: 0}
+  domino: {fileID: 0}
+  plane: {fileID: 0}
+  stage: {fileID: 0}
+  slope: {fileID: 0}
+  goal: {fileID: 0}
+  setball: 0
+  setboard: 0
+  setplane: 0
+  setstage: 0
+  setslope: 0
+  setgoal: 0
+  setdelete: 0
+  set_createmode: 0
+  set_adjustmode: 0
+  rev: {fileID: 0}
 --- !u!1 &721787467
 GameObject:
   m_ObjectHideFlags: 0

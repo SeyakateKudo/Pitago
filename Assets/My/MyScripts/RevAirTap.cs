@@ -6,7 +6,7 @@ using System;
 
 public class RevAirTap : MonoBehaviour , IInputClickHandler
 {
-
+    
     //Cube Prefab を扱う変数
     public GameObject ball;
     public GameObject domino;
@@ -14,6 +14,7 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
     public GameObject stage;
     public GameObject slope;
     public GameObject goal;
+    //public GameObject adjust;
 
 
     public bool setball;
@@ -23,6 +24,10 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
     public bool setslope;
     public bool setgoal;
 
+    public bool setdelete;
+    public bool set_createmode;
+    public bool set_adjustmode;
+
 
     public RevAirTap rev;
 
@@ -30,35 +35,57 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
     //AirTapされたときに呼び出される関数
     public void OnInputClicked(InputClickedEventData eventData)
     {
-        //throw new NotImplementedException();
-        if (setball == true) {
-            GameObject cube = GameObject.Instantiate(ball);//Cube Prefab の情報を用いて実体
-            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
-        }
-        else if(setboard == true)
+        if (set_createmode == true)
         {
-            GameObject cube = GameObject.Instantiate(domino);//Cube Prefab の情報を用いて実体
-            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
+            ActiveController ca = new ActiveController();
+            ca.setactive = false;
+            print("CreateMode");
+            //throw new NotImplementedException();
+            if (setball == true)
+            {
+                GameObject cube = GameObject.Instantiate(ball);//Cube Prefab の情報を用いて実体
+                cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
+            }
+            else if (setboard == true)
+            {
+                GameObject cube = GameObject.Instantiate(domino);//Cube Prefab の情報を用いて実体
+                cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
+            }
+            else if (setplane == true)
+            {
+                GameObject cube = GameObject.Instantiate(plane);//Cube Prefab の情報を用いて実体
+                cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
+            }
+            else if (setstage == true)
+            {
+                GameObject cube = GameObject.Instantiate(stage);//Cube Prefab の情報を用いて実体
+                cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
+            }
+            else if (setslope == true)
+            {
+                GameObject cube = GameObject.Instantiate(slope);//Cube Prefab の情報を用いて実体
+                cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
+            }
+            else if (setgoal == true)
+            {
+                GameObject cube = GameObject.Instantiate(goal);//Cube Prefab の情報を用いて実体
+                cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
+            }
+            else if (setdelete == true)
+            {
+                Destroy(gameObject);
+            }
+
+            else
+            {
+                print("AirTapされました");
+            }
         }
-        else if (setplane == true)
+        else if(set_adjustmode == true)
         {
-            GameObject cube = GameObject.Instantiate(plane);//Cube Prefab の情報を用いて実体
-            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
-        }
-        else if (setstage == true)
-        {
-            GameObject cube = GameObject.Instantiate(stage);//Cube Prefab の情報を用いて実体
-            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
-        }
-        else if (setslope == true)
-        {
-            GameObject cube = GameObject.Instantiate(slope);//Cube Prefab の情報を用いて実体
-            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
-        }
-        else if (setgoal == true)
-        {
-            GameObject cube = GameObject.Instantiate(goal);//Cube Prefab の情報を用いて実体
-            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
+            ActiveController ca = new ActiveController();
+            ca.setactive = true;
+            print("AdjustModeです");
         }
         else
         {
@@ -84,6 +111,7 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
         rev.setstage = false;
         rev.setslope = false;
         rev.setgoal = false;
+        rev.setdelete = false;
     }
 
     public void PlaneClickButton()
@@ -94,6 +122,7 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
         rev.setstage = false;
         rev.setslope = false;
         rev.setgoal = false;
+        rev.setdelete = false;
     }
 
     public void StageClickButton()
@@ -104,6 +133,7 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
         rev.setstage = true;
         rev.setslope = false;
         rev.setgoal = false;
+        rev.setdelete = false;
     }
 
     public void SlopeClickButton()
@@ -114,6 +144,7 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
         rev.setstage = false;
         rev.setslope = true;
         rev.setgoal = false;
+        rev.setdelete = false;
     }
 
     public void GoalClickButton()
@@ -124,6 +155,7 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
         rev.setstage = false;
         rev.setslope = false;
         rev.setgoal = true;
+        rev.setdelete = false;
     }
 
     public void EmptyClickButton()
@@ -134,8 +166,41 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
         rev.setstage = false;
         rev.setslope = false;
         rev.setgoal = false;
+        rev.setdelete = false;
     }
 
+    public void DeleteClickButton()
+    {
+        rev.setball = false;
+        rev.setboard = false;
+        rev.setplane = false;
+        rev.setstage = false;
+        rev.setslope = false;
+        rev.setgoal = false;
+        rev.setdelete = true;
+    }
+
+    public void CreateModeButton()
+    {
+        rev.set_createmode = true;
+        rev.set_adjustmode = false;
+        ActiveController ca = new ActiveController();
+        ca.setactive = false;
+        print("CreateMode");
+       // adjust.SetActive(false);
+    }
+
+    public void AdjustModeButton()
+    {
+        rev.set_createmode = false;
+        rev.set_adjustmode = true;
+        ActiveController ca = new ActiveController();
+        ca.setactive = true;
+        print("AdjustMode");
+       // adjust.SetActive(true);
+    }
+
+    
     // Start関数は初期化のために一度だけ実行される
     void Start()
     {
@@ -146,7 +211,13 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
         rev.setstage = false;
         rev.setslope = false;
         rev.setgoal = false;
+        rev.setdelete = false;
 
+        rev.set_createmode = false;
+        rev.set_adjustmode = false;
+
+        ActiveController ca = new ActiveController();
+        ca.setactive = false;
 
         //AirTap の通知が gameObject に渡るように設定
         InputManager.Instance.PushFallbackInputHandler(gameObject);
@@ -154,6 +225,6 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
     // Update は毎フレーム毎実行される
     void Update()
     {
-        
+   
     }
 }
