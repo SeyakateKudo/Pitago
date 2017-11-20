@@ -37,8 +37,7 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
     {
         if (set_createmode == true)
         {
-            ActiveController ca = new ActiveController();
-            ca.setactive = false;
+          
             print("CreateMode");
             //throw new NotImplementedException();
             if (setball == true)
@@ -83,8 +82,7 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
         }
         else if(set_adjustmode == true)
         {
-            ActiveController ca = new ActiveController();
-            ca.setactive = true;
+           
             print("AdjustModeです");
         }
         else
@@ -184,8 +182,7 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
     {
         rev.set_createmode = true;
         rev.set_adjustmode = false;
-        ActiveController ca = new ActiveController();
-        ca.setactive = false;
+      
         print("CreateMode");
        // adjust.SetActive(false);
     }
@@ -194,8 +191,6 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
     {
         rev.set_createmode = false;
         rev.set_adjustmode = true;
-        ActiveController ca = new ActiveController();
-        ca.setactive = true;
         print("AdjustMode");
        // adjust.SetActive(true);
     }
@@ -215,9 +210,6 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
 
         rev.set_createmode = false;
         rev.set_adjustmode = false;
-
-        ActiveController ca = new ActiveController();
-        ca.setactive = false;
 
         //AirTap の通知が gameObject に渡るように設定
         InputManager.Instance.PushFallbackInputHandler(gameObject);
